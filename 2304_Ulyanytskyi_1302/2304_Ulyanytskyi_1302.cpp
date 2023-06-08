@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdint>
 
 using namespace std;
 
@@ -8,7 +9,7 @@ int get_user_value() {
     return value;
 }
 
-long int get_factirial(int number) {
+int64_t get_factirial(int number) {
     if (number == 0 || number == 1) {
         return 1;
     }
@@ -19,8 +20,8 @@ long int get_factirial(int number) {
 
 int main()
 {
-    int user_value, 
-    long int factorial;
+    int user_value;
+    int64_t factorial;
 
     cout << "Enter a number (greater than zero) to find its factorial: ";
 

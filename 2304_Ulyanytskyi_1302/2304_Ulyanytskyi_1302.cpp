@@ -18,17 +18,25 @@ int64_t get_factirial(int number) {
     }
 }
 
+bool check_user_value(int number) {
+    return number >= 0;
+}
+
 int main()
 {
     int user_value;
     int64_t factorial;
 
-    cout << "Enter a number (greater than zero) to find its factorial: ";
+    cout << "Enter a non-negative number to find the factorial: ";
+    user_value = get_user_value();    
 
-    user_value = get_user_value();
-    factorial = get_factirial(user_value);
-
-    cout << "The factorial of " << user_value << " is " << factorial;
+    if (check_user_value(user_value)) {
+        factorial = get_factirial(user_value);
+        cout << "The factorial of " << user_value << " is " << factorial;
+    }
+    else {
+        cout << "Input error";
+    }    
 
     return 0;
 }

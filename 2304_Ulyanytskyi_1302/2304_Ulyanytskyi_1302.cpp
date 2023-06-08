@@ -21,7 +21,7 @@ int main()
 {
     int user_value, factorial;
 
-    cout << "Enter a number to find its factorial: ";
+    cout << "Enter a number (greater than zero) to find its factorial: ";
 
     user_value = get_user_value();
     factorial = get_factirial(user_value);

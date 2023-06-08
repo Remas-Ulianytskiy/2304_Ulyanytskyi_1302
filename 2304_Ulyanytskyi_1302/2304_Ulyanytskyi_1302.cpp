@@ -8,7 +8,7 @@ int get_user_value() {
     return value;
 }
 
-int get_factirial(int number) {
+long int get_factirial(int number) {
     if (number == 0 || number == 1) {
         return 1;
     }
@@ -19,7 +19,8 @@ int get_factirial(int number) {
 
 int main()
 {
-    int user_value, factorial;
+    int user_value, 
+    long int factorial;
 
     cout << "Enter a number (greater than zero) to find its factorial: ";
 
